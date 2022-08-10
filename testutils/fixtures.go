@@ -67,7 +67,7 @@ func (p *post) String() string {
  * End setup sandbox
  */
 
-var Fixtures = jinjia.Context{
+var Fixtures = jinjia2.Context{
 	"number": 11,
 	"simple": map[string]interface{}{
 		"number":                   42,

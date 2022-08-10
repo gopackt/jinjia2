@@ -19,17 +19,17 @@ import (
 	u "github.com/gopackt/jinjia2/utils"
 )
 
-func TestEnv(root string) *jinjia.Environment {
-	cfg := jinjia.NewConfig()
+func TestEnv(root string) *jinjia2.Environment {
+	cfg := jinjia2.NewConfig()
 	cfg.KeepTrailingNewline = true
 	loader := loaders.MustNewFileSystemLoader(root)
-	env := jinjia.NewEnvironment(cfg, loader)
+	env := jinjia2.NewEnvironment(cfg, loader)
 	env.Autoescape = true
 	env.Globals.Set("lorem", u.Lorem) // Predictable random content
 	return env
 }
 
-func GlobTemplateTests(t *testing.T, root string, env *jinjia.Environment) {
+func GlobTemplateTests(t *testing.T, root string, env *jinjia2.Environment) {
 	pattern := filepath.Join(root, `*.tpl`)
 	matches, err := filepath.Glob(pattern)
 	// env := TestEnv(root)

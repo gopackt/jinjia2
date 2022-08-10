@@ -1,7 +1,7 @@
 //go:build bench
 // +build bench
 
-package jinjia2_test
+package tests_test
 
 import (
 	"io/ioutil"

@@ -1,4 +1,4 @@
-package jinjia_test
+package tests
 
 import (
 	"flag"

@@ -1,4 +1,4 @@
-package jinjia
+package jinjia2
 
 import (
 	"io/ioutil"

@@ -1,4 +1,4 @@
-package jinjia_test
+package tests
 
 import (
 	"bytes"
@@ -39,7 +39,7 @@ func TestWhiteSpace(t *testing.T) {
 				}
 			}()
 			cfg := config.NewConfig()
-			env := jinjia.NewEnvironment(cfg, jinjia.DefaultLoader)
+			env := jinjia2.NewEnvironment(cfg, jinjia2.DefaultLoader)
 			env.TrimBlocks = test.trim_blocks
 			env.LstripBlocks = test.lstrip_blocks
 			env.KeepTrailingNewline = test.keep_trailing_newline

@@ -1,4 +1,4 @@
-package jinjia
+package jinjia2
 
 // import (
 // 	"github.com/gopackt/jinjia2/exec"
